@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microsoft Security Demo Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Microsoft Security Operations Center</p>
+        <h1>Interactive Defender Demo Dashboard</h1>
+        <p>
+          Click an offering to load a live details panel with scoped guidance, plus jump to the
+          dedicated sub-dashboard page for deep dive how-tos and best practices.
+        </p>
+      </div>
+      <div class="hero-stats" aria-label="Environment summary">
+        <article>
+          <span>Offerings</span>
+          <strong>6</strong>
+        </article>
+        <article>
+          <span>Coverage Domains</span>
+          <strong>Endpoint · Identity · SaaS</strong>
+        </article>
+        <article>
+          <span>Playbook Type</span>
+          <strong>How-To + Best Practices</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="workspace" aria-label="Security offerings workspace">
+      <aside class="offering-list" aria-label="Offerings list" id="offeringList"></aside>
+
+      <section class="detail-panel" aria-live="polite">
+        <div class="detail-header">
+          <span class="tag" id="detailTag"></span>
+          <h2 id="detailTitle"></h2>
+          <p id="detailDescription"></p>
+          <a id="detailLink" class="primary-link" href="#">Open full sub-dashboard →</a>
+        </div>
+
+        <div class="detail-grid">
+          <article class="panel">
+            <h3>How-To Checklist</h3>
+            <ul id="detailHowTo"></ul>
+          </article>
+          <article class="panel">
+            <h3>Best Practices</h3>
+            <ul id="detailBestPractices"></ul>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <p class="footer-note">
+      Demo tip: serve this folder with <code>python3 -m http.server 8000</code> and open
+      <code>http://localhost:8000/index.html</code>.
+    </p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
