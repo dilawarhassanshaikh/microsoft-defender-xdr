@@ -6,22 +6,22 @@ Infrastructure-as-Code and automation scripts for deploying and configuring the 
 
 | Folder | Defender Product | Status |
 |--------|-----------------|--------|
-| `defender-for-identity/` | Microsoft Defender for Identity | In Progress |
-| `defender-for-endpoint/` | Microsoft Defender for Endpoint | Planned |
-| `defender-for-office365/` | Microsoft Defender for Office 365 | Planned |
-| `defender-for-cloud-apps/` | Microsoft Defender for Cloud Apps | Planned |
-| `defender-vulnerability-management/` | Microsoft Defender Vulnerability Management | Planned |
-| `defender-xdr-portal/` | Unified XDR Portal (Hunting, Automation) | Planned |
+| `defender-for-identity/` | Microsoft Defender for Identity | Implemented |
+| `defender-for-endpoint/` | Microsoft Defender for Endpoint | Implemented |
+| `defender-for-office365/` | Microsoft Defender for Office 365 | Implemented |
+| `defender-for-cloud-apps/` | Microsoft Defender for Cloud Apps | Implemented |
+| `defender-vulnerability-management/` | Microsoft Defender Vulnerability Management | Implemented |
+| `defender-xdr-portal/` | Unified XDR Portal (Hunting, Automation) | Implemented |
 | `common/` | Shared modules and helper functions | Planned |
 
 ## Getting Started
 
-Each product folder contains:
+Each product folder contains deployment accelerators:
 
 - **prerequisites/** - Scripts to validate environment readiness
-- **bicep/** or **configuration/** - Infrastructure-as-Code templates
-- **scripts/** - PowerShell automation for deployment and configuration
-- **docs/** - Product-specific documentation
+- **deployment/** - Product deployment orchestration scripts
+- **scripts/** - Wrapper scripts for standard execution flow
+- **README.md** - Product-specific usage notes
 
 Start with the prerequisites checker for any product before running deployments.
 
