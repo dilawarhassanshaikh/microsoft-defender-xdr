@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CIS Controls v8 Mapping | Security Framework Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="top-nav" role="navigation" aria-label="Primary navigation">
+    <div class="nav-brand">
+      <svg class="nav-logo" width="20" height="20" viewBox="0 0 23 23" fill="none" aria-hidden="true">
+        <rect width="11" height="11" fill="#f25022"/><rect x="12" width="11" height="11" fill="#7fba00"/>
+        <rect y="12" width="11" height="11" fill="#00a4ef"/><rect x="12" y="12" width="11" height="11" fill="#ffb900"/>
+      </svg>
+      <span class="nav-title">Microsoft Defender XDR</span>
+      <span class="nav-separator">|</span>
+      <span class="nav-subtitle">CIS Controls v8</span>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="page-header">
+      <a href="index.html" class="back-link">&larr; Back to Dashboard</a>
+    </div>
+
+    <section class="hero-section" style="grid-template-columns:1fr">
+      <div class="hero-text">
+        <h1>CIS Controls v8 — Safeguard Mapping</h1>
+        <p>The CIS Critical Security Controls are a prioritised set of 18 top-level controls containing 153 safeguards. They are organised into three Implementation Groups (IG1, IG2, IG3) to enable scalable adoption. Below is the mapping of Microsoft Defender XDR capabilities to relevant CIS safeguards.</p>
+      </div>
+    </section>
+
+    <!-- CIS 1: Inventory and Control of Enterprise Assets -->
+    <section class="domain-section">
+      <div class="domain-header expanded" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>CIS 1 — Inventory and Control of Enterprise Assets</h3>
+        <span class="domain-count"><span class="ig-badge ig-badge--ig1">IG1</span></span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls">
+        <div class="control-row">
+          <span class="control-id">1.1</span>
+          <span class="control-title">Establish and maintain detailed enterprise asset inventory</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDE Device Inventory</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">1.2</span>
+          <span class="control-title">Address unauthorised assets</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDE Device Discovery</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIS 2: Inventory and Control of Software Assets -->
+    <section class="domain-section">
+      <div class="domain-header expanded" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>CIS 2 — Inventory and Control of Software Assets</h3>
+        <span class="domain-count"><span class="ig-badge ig-badge--ig1">IG1</span></span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls">
+        <div class="control-row">
+          <span class="control-id">2.1</span>
+          <span class="control-title">Establish and maintain a software inventory</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDVM Software Inventory, MDCA Shadow IT</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">2.3</span>
+          <span class="control-title">Address unauthorised software</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">MDCA App Governance, MDVM Browser Extensions</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIS 3: Data Protection -->
+    <section class="domain-section">
+      <div class="domain-header" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>CIS 3 — Data Protection</h3>
+        <span class="domain-count"><span class="ig-badge ig-badge--ig1">IG1</span></span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls" hidden>
+        <div class="control-row">
+          <span class="control-id">3.1</span>
+          <span class="control-title">Establish and maintain a data management process</span>
+          <span class="control-status"><span class="status-badge status-badge--fail">Non-Compliant</span></span>
+          <span class="control-defender">DLP Integration (not enabled)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIS 4: Secure Configuration of Enterprise Assets and Software -->
+    <section class="domain-section">
+      <div class="domain-header expanded" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>CIS 4 — Secure Configuration</h3>
+        <span class="domain-count"><span class="ig-badge ig-badge--ig1">IG1</span></span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls">
+        <div class="control-row">
+          <span class="control-id">4.1</span>
+          <span class="control-title">Establish and maintain a secure configuration process</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">MDI DC Sensor, MDVM Security Baselines</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIS 5: Account Management -->
+    <section class="domain-section">
+      <div class="domain-header expanded" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>CIS 5 — Account Management</h3>
+        <span class="domain-count"><span class="ig-badge ig-badge--ig1">IG1</span></span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls">
+        <div class="control-row">
+          <span class="control-id">5.2</span>
+          <span class="control-title">Use unique passwords</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDI Credential Detection</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">5.4</span>
+          <span class="control-title">Restrict administrator privileges</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">MDI AD Security Posture</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIS 6: Access Control Management -->
+    <section class="domain-section">
+      <div class="domain-header" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>CIS 6 — Access Control Management</h3>
+        <span class="domain-count"><span class="ig-badge ig-badge--ig1">IG1</span></span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls" hidden>
+        <div class="control-row">
+          <span class="control-id">6.8</span>
+          <span class="control-title">Define and maintain role-based access control</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">XDR RBAC, MDCA Session Controls</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIS 7: Continuous Vulnerability Management -->
+    <section class="domain-section">
+      <div class="domain-header expanded" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>CIS 7 — Continuous Vulnerability Management</h3>
+        <span class="domain-count"><span class="ig-badge ig-badge--ig2">IG2</span></span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls">
+        <div class="control-row">
+          <span class="control-id">7.1</span>
+          <span class="control-title">Establish and maintain a vulnerability management process</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDVM Vulnerability Assessment</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIS 8: Audit Log Management -->
+    <section class="domain-section">
+      <div class="domain-header expanded" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>CIS 8 — Audit Log Management</h3>
+        <span class="domain-count"><span class="ig-badge ig-badge--ig1">IG1</span></span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls">
+        <div class="control-row">
+          <span class="control-id">8.2</span>
+          <span class="control-title">Collect audit logs</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">XDR Advanced Hunting (KQL)</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">8.11</span>
+          <span class="control-title">Conduct audit log reviews</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDI Identity Threat Detection</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIS 9: Email and Web Browser Protections -->
+    <section class="domain-section">
+      <div class="domain-header expanded" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>CIS 9 — Email and Web Browser Protections</h3>
+        <span class="domain-count"><span class="ig-badge ig-badge--ig1">IG1</span></span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls">
+        <div class="control-row">
+          <span class="control-id">9.2</span>
+          <span class="control-title">Use DNS filtering services</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">MDE Network Protection</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">9.3</span>
+          <span class="control-title">Maintain and enforce network-based URL filters</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">MDE Web Content Filtering, MDO Safe Links</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">9.5</span>
+          <span class="control-title">Implement DMARC</span>
+          <span class="control-status"><span class="status-badge status-badge--fail">Non-Compliant</span></span>
+          <span class="control-defender">MDO Email Auth (DMARC/DKIM/SPF)</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">9.6</span>
+          <span class="control-title">Block unnecessary file types</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDO Safe Attachments</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIS 10: Malware Defences -->
+    <section class="domain-section">
+      <div class="domain-header expanded" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>CIS 10 — Malware Defences</h3>
+        <span class="domain-count"><span class="ig-badge ig-badge--ig1">IG1</span></span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls">
+        <div class="control-row">
+          <span class="control-id">10.1</span>
+          <span class="control-title">Deploy and maintain anti-malware software</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDE Endpoint Detection &amp; Response</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">10.4</span>
+          <span class="control-title">Configure automatic anti-malware scanning of removable media</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDE Controlled Folder Access</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">10.5</span>
+          <span class="control-title">Enable anti-exploitation features</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDE Attack Surface Reduction</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIS 13: Network Monitoring and Defence -->
+    <section class="domain-section">
+      <div class="domain-header" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>CIS 13 — Network Monitoring and Defence</h3>
+        <span class="domain-count"><span class="ig-badge ig-badge--ig2">IG2</span></span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls" hidden>
+        <div class="control-row">
+          <span class="control-id">13.5</span>
+          <span class="control-title">Manage access control for remote assets</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDI Lateral Movement Detection</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIS 14: Security Awareness and Skills Training -->
+    <section class="domain-section">
+      <div class="domain-header" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>CIS 14 — Security Awareness and Skills Training</h3>
+        <span class="domain-count"><span class="ig-badge ig-badge--ig1">IG1</span></span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls" hidden>
+        <div class="control-row">
+          <span class="control-id">14.1</span>
+          <span class="control-title">Establish and maintain a security awareness program</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">MDO Anti-Phishing Policies</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIS 16: Application Software Security -->
+    <section class="domain-section">
+      <div class="domain-header" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>CIS 16 — Application Software Security</h3>
+        <span class="domain-count"><span class="ig-badge ig-badge--ig2">IG2</span></span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls" hidden>
+        <div class="control-row">
+          <span class="control-id">16.10</span>
+          <span class="control-title">Apply secure design principles in application architectures</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDCA OAuth App Monitoring</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIS 17: Incident Response Management -->
+    <section class="domain-section">
+      <div class="domain-header expanded" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>CIS 17 — Incident Response Management</h3>
+        <span class="domain-count"><span class="ig-badge ig-badge--ig1">IG1</span></span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls">
+        <div class="control-row">
+          <span class="control-id">17.4</span>
+          <span class="control-title">Establish and maintain an incident response process</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDE AIR, XDR Incident Queue</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">17.5</span>
+          <span class="control-title">Assign key roles and responsibilities</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDO Zero-hour Auto Purge</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">17.8</span>
+          <span class="control-title">Conduct post-incident reviews</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">XDR Auto Investigation &amp; Response</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">17.9</span>
+          <span class="control-title">Establish and maintain security incident thresholds</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">XDR Threat Analytics Reports</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIS 18: Penetration Testing -->
+    <section class="domain-section">
+      <div class="domain-header" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>CIS 18 — Penetration Testing</h3>
+        <span class="domain-count"><span class="ig-badge ig-badge--ig3">IG3</span></span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls" hidden>
+        <div class="control-row">
+          <span class="control-id">18.1</span>
+          <span class="control-title">Establish and maintain a penetration testing program</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">XDR Secure Score</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">18.3</span>
+          <span class="control-title">Remediate penetration test findings</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">XDR Multi-Tenant Management</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>CIS Controls v8 Safeguard Mapping &mdash; Microsoft Defender XDR</p>
+  </footer>
+</body>
+</html>

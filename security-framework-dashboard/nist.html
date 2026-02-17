@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NIST CSF 2.0 Mapping | Security Framework Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="top-nav" role="navigation" aria-label="Primary navigation">
+    <div class="nav-brand">
+      <svg class="nav-logo" width="20" height="20" viewBox="0 0 23 23" fill="none" aria-hidden="true">
+        <rect width="11" height="11" fill="#f25022"/><rect x="12" width="11" height="11" fill="#7fba00"/>
+        <rect y="12" width="11" height="11" fill="#00a4ef"/><rect x="12" y="12" width="11" height="11" fill="#ffb900"/>
+      </svg>
+      <span class="nav-title">Microsoft Defender XDR</span>
+      <span class="nav-separator">|</span>
+      <span class="nav-subtitle">NIST CSF 2.0</span>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="page-header">
+      <a href="index.html" class="back-link">&larr; Back to Dashboard</a>
+    </div>
+
+    <section class="hero-section" style="grid-template-columns:1fr">
+      <div class="hero-text">
+        <h1>NIST Cybersecurity Framework 2.0 — Function Mapping</h1>
+        <p>NIST CSF 2.0 provides a comprehensive framework organised around six core functions: Govern (GV), Identify (ID), Protect (PR), Detect (DE), Respond (RS), and Recover (RC). Each function contains categories and subcategories that define desired cybersecurity outcomes. Below is the mapping of Microsoft Defender XDR capabilities to NIST CSF subcategories.</p>
+      </div>
+    </section>
+
+    <!-- GOVERN (GV) -->
+    <section class="domain-section">
+      <div class="domain-header expanded" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3><span class="function-tag function-tag--govern">GOVERN</span> GV — Organisational Context, Strategy &amp; Governance</h3>
+        <span class="domain-count">3 subcategories mapped</span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls">
+        <div class="control-row">
+          <span class="control-id">GV.OC-03</span>
+          <span class="control-title">Legal, regulatory, and contractual requirements are understood and managed</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">XDR Secure Score</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">GV.RR-02</span>
+          <span class="control-title">Cybersecurity roles and responsibilities are established and coordinated</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">XDR Multi-Tenant Management</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">GV.RR-03</span>
+          <span class="control-title">Adequate resources are allocated for cybersecurity</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">XDR Secure Score</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- IDENTIFY (ID) -->
+    <section class="domain-section">
+      <div class="domain-header expanded" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3><span class="function-tag function-tag--identify">IDENTIFY</span> ID — Asset Management, Risk Assessment</h3>
+        <span class="domain-count">5 subcategories mapped</span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls">
+        <div class="control-row">
+          <span class="control-id">ID.AM-01</span>
+          <span class="control-title">Inventories of hardware managed by the organisation are maintained</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDE Device Inventory</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">ID.AM-02</span>
+          <span class="control-title">Inventories of software, services, and systems managed by the organisation are maintained</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDVM Software Inventory, MDCA Shadow IT, MDVM Browser Ext.</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">ID.RA-01</span>
+          <span class="control-title">Vulnerabilities in assets are identified, validated, and recorded</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDVM Vulnerability Assessment</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">ID.RA-02</span>
+          <span class="control-title">Cyber threat intelligence is received from information sharing forums and sources</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">XDR Threat Analytics Reports</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">ID.GV-03</span>
+          <span class="control-title">Cybersecurity is included in human resources practices</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">XDR Secure Score</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROTECT (PR) -->
+    <section class="domain-section">
+      <div class="domain-header expanded" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3><span class="function-tag function-tag--protect">PROTECT</span> PR — Access Control, Data Security, Platform Security</h3>
+        <span class="domain-count">10 subcategories mapped</span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls">
+        <div class="control-row">
+          <span class="control-id">PR.AC-04</span>
+          <span class="control-title">Access permissions and authorisations are managed</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDCA Session Controls, XDR RBAC</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">PR.AC-06</span>
+          <span class="control-title">Identities are proofed, bound to credentials, and managed</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDI AD Security, MDCA OAuth Monitoring</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">PR.AC-07</span>
+          <span class="control-title">Users, devices, and other assets are authenticated commensurate with risk</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDI Credential Detection</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">PR.AT-01</span>
+          <span class="control-title">Personnel are provided awareness and training so they can perform security-related duties</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">MDO Anti-Phishing Policies</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">PR.DS-01</span>
+          <span class="control-title">Data-at-rest is protected</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDE Controlled Folder Access</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">PR.DS-02</span>
+          <span class="control-title">Data-in-transit is protected</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">MDE Network Protection, MDO DMARC/DKIM/SPF</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">PR.IP-01</span>
+          <span class="control-title">Baseline configurations of systems are created and maintained</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">MDI DC Sensor Deployment, MDVM Security Baselines</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">PR.PT-03</span>
+          <span class="control-title">The principle of least functionality is incorporated</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDE ASR Rules, MDE Web Content Filtering, MDO Safe Links</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETECT (DE) -->
+    <section class="domain-section">
+      <div class="domain-header expanded" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3><span class="function-tag function-tag--detect">DETECT</span> DE — Continuous Monitoring, Adverse Event Analysis</h3>
+        <span class="domain-count">4 subcategories mapped</span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls">
+        <div class="control-row">
+          <span class="control-id">DE.CM-01</span>
+          <span class="control-title">Networks and network services are monitored to find potentially adverse events</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDE EDR, MDO Safe Attachments</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">DE.CM-03</span>
+          <span class="control-title">Personnel activity and technology usage are monitored</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDI Lateral Movement Detection</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">DE.AE-02</span>
+          <span class="control-title">Potentially adverse events are analysed to better understand associated activities</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDI Identity Threat Detection, XDR Advanced Hunting</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">DE.AE-04</span>
+          <span class="control-title">The estimated impact and scope of adverse events is understood</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">XDR Unified Incident Queue</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESPOND (RS) -->
+    <section class="domain-section">
+      <div class="domain-header expanded" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3><span class="function-tag function-tag--respond">RESPOND</span> RS — Incident Management, Analysis, Mitigation</h3>
+        <span class="domain-count">3 subcategories mapped</span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls">
+        <div class="control-row">
+          <span class="control-id">RS.RP-01</span>
+          <span class="control-title">The response plan is executed during or after an incident</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">XDR Automated Investigation &amp; Response</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">RS.AN-03</span>
+          <span class="control-title">Analysis is performed to establish what has taken place during an incident</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDE Automated Investigation &amp; Remediation</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">RS.MI-01</span>
+          <span class="control-title">Incidents are contained</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDO Zero-hour Auto Purge (ZAP)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECOVER (RC) -->
+    <section class="domain-section">
+      <div class="domain-header" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3><span class="function-tag function-tag--recover">RECOVER</span> RC — Incident Recovery Planning &amp; Execution</h3>
+        <span class="domain-count">0 directly mapped</span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls" hidden>
+        <div class="control-row">
+          <span class="control-id">RC.RP-01</span>
+          <span class="control-title">The recovery portion of the incident response plan is executed once initiated from the incident response process</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">Recovery operations require additional Azure Backup / business continuity solutions beyond Defender XDR scope</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>NIST Cybersecurity Framework 2.0 Mapping &mdash; Microsoft Defender XDR</p>
+  </footer>
+</body>
+</html>
