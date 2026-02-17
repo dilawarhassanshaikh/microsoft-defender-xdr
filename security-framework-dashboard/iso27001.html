@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ISO 27001:2022 Control Mapping | Security Framework Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="top-nav" role="navigation" aria-label="Primary navigation">
+    <div class="nav-brand">
+      <svg class="nav-logo" width="20" height="20" viewBox="0 0 23 23" fill="none" aria-hidden="true">
+        <rect width="11" height="11" fill="#f25022"/><rect x="12" width="11" height="11" fill="#7fba00"/>
+        <rect y="12" width="11" height="11" fill="#00a4ef"/><rect x="12" y="12" width="11" height="11" fill="#ffb900"/>
+      </svg>
+      <span class="nav-title">Microsoft Defender XDR</span>
+      <span class="nav-separator">|</span>
+      <span class="nav-subtitle">ISO 27001:2022</span>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="page-header">
+      <a href="index.html" class="back-link">&larr; Back to Dashboard</a>
+    </div>
+
+    <section class="hero-section" style="grid-template-columns:1fr">
+      <div class="hero-text">
+        <h1>ISO 27001:2022 — Control Mapping</h1>
+        <p>ISO/IEC 27001:2022 specifies requirements for establishing, implementing, maintaining, and continually improving an information security management system (ISMS). The 2022 revision reorganises controls into four themes with 93 controls total. Below is the mapping of Microsoft Defender XDR capabilities to each Annex A domain.</p>
+      </div>
+    </section>
+
+    <!-- Domain: Organisational Controls (A.5) -->
+    <section class="domain-section">
+      <div class="domain-header expanded" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>A.5 — Organisational Controls</h3>
+        <span class="domain-count">14 controls mapped</span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls">
+        <div class="control-row">
+          <span class="control-id">A.5.7</span>
+          <span class="control-title">Threat intelligence — Collect and analyse threat intelligence to inform security decisions</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">XDR Threat Analytics</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">A.5.8</span>
+          <span class="control-title">Information security in project management — Integrate security throughout project lifecycle</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">XDR Multi-Tenant Mgmt</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">A.5.9</span>
+          <span class="control-title">Inventory of information and other associated assets — Maintain asset inventory</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDE Device Inventory, MDVM Software Inventory, MDCA Shadow IT</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">A.5.12</span>
+          <span class="control-title">Classification of information — Classify information according to sensitivity</span>
+          <span class="control-status"><span class="status-badge status-badge--fail">Non-Compliant</span></span>
+          <span class="control-defender">DLP Integration (not enabled)</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">A.5.14</span>
+          <span class="control-title">Information transfer — Protect information during transfer</span>
+          <span class="control-status"><span class="status-badge status-badge--fail">Non-Compliant</span></span>
+          <span class="control-defender">MDO DMARC/DKIM/SPF</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">A.5.15</span>
+          <span class="control-title">Access control — Ensure authorised access to information assets</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDI AD Security, XDR RBAC</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">A.5.17</span>
+          <span class="control-title">Authentication information — Manage authentication credentials securely</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDI Credential Detection</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">A.5.23</span>
+          <span class="control-title">Information security for use of cloud services — Manage cloud service security</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">MDCA App Governance</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">A.5.25</span>
+          <span class="control-title">Assessment and decision on information security events — Triage and assess events</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDE AIR, XDR Incident Queue</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">A.5.26</span>
+          <span class="control-title">Response to information security incidents — Execute incident response procedures</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDO ZAP, XDR Auto-IR</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">A.5.36</span>
+          <span class="control-title">Compliance with policies, rules, and standards — Monitor policy adherence</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">XDR Secure Score</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Domain: People Controls (A.6) -->
+    <section class="domain-section">
+      <div class="domain-header" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>A.6 — People Controls</h3>
+        <span class="domain-count">1 control mapped</span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls" hidden>
+        <div class="control-row">
+          <span class="control-id">A.6.3</span>
+          <span class="control-title">Information security awareness, education, and training — Ensure personnel are trained</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">MDO Anti-Phishing, Attack Simulation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Domain: Physical Controls (A.7) — minimal mapping -->
+    <section class="domain-section">
+      <div class="domain-header" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>A.7 — Physical Controls</h3>
+        <span class="domain-count">0 controls mapped</span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls" hidden>
+        <div class="control-row">
+          <span class="control-id">—</span>
+          <span class="control-title">Physical controls are outside the scope of Defender XDR digital capabilities. These require separate physical security assessments.</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">N/A</span></span>
+          <span class="control-defender">—</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Domain: Technological Controls (A.8) -->
+    <section class="domain-section">
+      <div class="domain-header expanded" onclick="this.classList.toggle('expanded');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+        <h3>A.8 — Technological Controls</h3>
+        <span class="domain-count">14 controls mapped</span>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="domain-controls">
+        <div class="control-row">
+          <span class="control-id">A.8.3</span>
+          <span class="control-title">Information access restriction — Restrict access based on policy</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDE Controlled Folder Access, MDCA Session Controls</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">A.8.7</span>
+          <span class="control-title">Protection against malware — Prevent, detect, and recover from malware</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDE EDR, MDO Safe Attachments</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">A.8.8</span>
+          <span class="control-title">Management of technical vulnerabilities — Identify and remediate vulnerabilities</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDE ASR, MDVM Vuln Assessment</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">A.8.9</span>
+          <span class="control-title">Configuration management — Manage secure configurations</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">MDI DC Sensor, MDVM Baselines</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">A.8.15</span>
+          <span class="control-title">Logging — Record events for analysis and investigation</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDI Lateral Movement, XDR Advanced Hunting</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">A.8.16</span>
+          <span class="control-title">Monitoring activities — Monitor systems for anomalous behaviour</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDI Identity Threat Detection</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">A.8.20</span>
+          <span class="control-title">Networks security — Secure network communications</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">MDE Network Protection</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">A.8.23</span>
+          <span class="control-title">Web filtering — Control access to web resources</span>
+          <span class="control-status"><span class="status-badge status-badge--partial">Partial</span></span>
+          <span class="control-defender">MDE Web Content Filtering, MDO Safe Links</span>
+        </div>
+        <div class="control-row">
+          <span class="control-id">A.8.26</span>
+          <span class="control-title">Application security requirements — Ensure application security</span>
+          <span class="control-status"><span class="status-badge status-badge--pass">Compliant</span></span>
+          <span class="control-defender">MDCA OAuth Monitoring, MDVM Browser Extensions</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>ISO 27001:2022 Control Mapping &mdash; Microsoft Defender XDR</p>
+  </footer>
+</body>
+</html>
