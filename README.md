@@ -12,6 +12,7 @@ Infrastructure-as-Code and automation scripts for deploying and configuring the 
 | `defender-for-cloud-apps/` | Microsoft Defender for Cloud Apps | Implemented |
 | `defender-vulnerability-management/` | Microsoft Defender Vulnerability Management | Implemented |
 | `defender-xdr-portal/` | Unified XDR Portal (Hunting, Automation) | Implemented |
+| `security-framework-dashboard/` | Compliance dashboard mapping Defender to ISO 27001, CIS, NIST | Implemented |
 | `common/` | Shared modules and helper functions | Planned |
 
 ## Getting Started
